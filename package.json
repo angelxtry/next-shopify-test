@@ -1,5 +1,5 @@
 {
-  "name": "ecommerce-next-ts",
+  "name": "next-shopify-test",
   "private": true,
   "scripts": {
     "dev": "next dev",
