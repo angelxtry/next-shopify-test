@@ -1,5 +1,6 @@
 .root {
-  @apply h-full mx-auto;
+  @apply bg-primary h-full mx-auto;
   width: 2640px;
-  background-color: var(--violet-light);
+  background-color: theme("colors.red");
+  color: theme("textColor.base");
 }

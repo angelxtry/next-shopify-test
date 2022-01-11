@@ -5,9 +5,7 @@ import s from "./Layout.module.css";
 const Layout: FC = ({ children }) => {
   return (
     <main className={s.root}>
-      <div className={"fit"} style={{ color: "var(--primary)" }}>
-        {children}
-      </div>
+      <div className={"fit"}>{children}</div>
     </main>
   );
 };
