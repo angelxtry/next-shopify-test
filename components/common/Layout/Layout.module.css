@@ -1,4 +1,5 @@
 .root {
   @apply h-full mx-auto;
   width: 2640px;
+  background-color: var(--violet-light);
 }
