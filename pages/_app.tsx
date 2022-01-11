@@ -1,11 +1,9 @@
 import "@assets/globals.css";
 
-import { Layout } from "@components/common";
 import { AppProps } from "next/app";
 import { FC } from "react";
 
 const Noop: FC = ({ children }) => <>{children}</>;
-
 function MyApp({
   Component,
   pageProps,

@@ -9,6 +9,7 @@ interface Props {
 
 const placeholderImage = "/product-image-placeholder.svg";
 const ProductCard: FC<Props> = ({ product }) => {
+  console.log(ProductCard);
   return (
     <Link href={`/products/${product.slug}`}>
       <a>
@@ -25,7 +26,7 @@ const ProductCard: FC<Props> = ({ product }) => {
             height={540}
             width={540}
             quality={85}
-            layout={"responsive"}
+            layout="responsive"
           />
         )}
       </a>

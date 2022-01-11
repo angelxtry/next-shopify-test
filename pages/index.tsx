@@ -20,7 +20,7 @@ export default function Home({
   products,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <div className={"root"}>
+    <div className="root">
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}
