@@ -1,4 +1,5 @@
 import { Layout } from "@components/common";
+import { ProductCard } from "@components/product";
 import { getConfig } from "@framework/api/config";
 import { getAllProducts } from "@framework/product/get-all-products";
 import { InferGetStaticPropsType } from "next";
@@ -18,7 +19,13 @@ export async function getStaticProps() {
 export default function Home({
   products,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  return <div>{JSON.stringify(products)}</div>;
+  return (
+    <div className={"root"}>
+      {products.map((product) => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </div>
+  );
 }
 
 Home.Layout = Layout;
