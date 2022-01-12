@@ -1,5 +1,6 @@
 import { Layout } from "@components/common";
 import { ProductCard } from "@components/product";
+import { Grid } from "@components/ui";
 import { getConfig } from "@framework/api/config";
 import { getAllProducts } from "@framework/product/get-all-products";
 import { InferGetStaticPropsType } from "next";
@@ -20,11 +21,13 @@ export default function Home({
   products,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <div className="root">
-      {products.map((product) => (
-        <ProductCard key={product.id} product={product} />
-      ))}
-    </div>
+    <>
+      <Grid>
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </Grid>
+    </>
   );
 }
 

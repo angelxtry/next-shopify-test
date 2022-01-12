@@ -1,6 +1,5 @@
 .root {
   @apply bg-primary h-full mx-auto;
-  width: 2640px;
-  background-color: theme("colors.red");
+  background-color: theme("colors.primary");
   color: theme("textColor.base");
 }
